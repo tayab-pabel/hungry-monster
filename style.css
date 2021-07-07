@@ -55,6 +55,10 @@ p {
   color: #707070;
 }
 
+.navbar-toggler .fa {
+  font-size: 20px;
+}
+
 .navbar-toggler,  
 .navbar-toggler:focus {
   color: #EC6E4C!important;
