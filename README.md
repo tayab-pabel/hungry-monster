@@ -17,4 +17,4 @@
    - Chrome Dev Tools
 ## User Interface
 ![](ui/search-results.png)
-![](ui/search-info.png)
+![](ui/single-info.png)
