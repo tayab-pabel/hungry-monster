@@ -16,6 +16,5 @@
    - Github
    - Chrome Dev Tools
 ## User Interface
-![](ui/search-input.png)
 ![](ui/search-results.png)
-![](ui/search-input.png)
+![](ui/search-info.png)
