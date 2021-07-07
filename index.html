@@ -35,7 +35,7 @@
                     <img class="img-fluid logo" src="images/hungry-monster.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-navicon"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="navbar-nav ml-auto">
@@ -50,18 +50,27 @@
     </header>
     <!-- End Header -->
     
-    <section class="container">
-        <div class="py-5">
-            <form class="col-lg-6 m-auto mt-5">
+    <!-- Start Main Section -->
+    <section class="container my-5">
+        <div id="input-area" class="mb-5">
+            <form class="col-lg-6 m-auto">
                 <div class="input-group">
-                    <input id="cityName" type="text" class="form-control" placeholder="Search for Meal...">
+                    <input id="meal" type="text" class="form-control" placeholder="Search for Meal...">
                     <div class="input-group-append">
-                        <button onclick="" type="button" class="btn">Search</button>
+                        <button id="search" type="button" class="btn">Search</button>
                     </div>
                 </div>
             </form>
         </div>
+        <div>
+            <h4 class="text-center" id="notice"></h4>
+        </div>
+        <div id="foodDetailInfo" class="food-info">
+        </div>
+        <div id="menuList" class="menu-list row">
+        </div>
     </section>
+    <!-- End Main Section -->
 
     <!-- External JavaScript -->
     <script src="index.js"></script>

@@ -10,6 +10,40 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F06C4E;
+}
+
+p {
+  line-height: 2;
+  font-size: 16px;
+  font-weight:400;
+  color: #6C6C6C;
+}
+
+.fas {
+  color: #EC6E4C;
+}
+
 .navbar .logo {
   width: 97.97px;
   height: 74.93px;
@@ -19,6 +53,15 @@ body {
   font-weight: 500!important;
   margin: 0 10px;
   color: #707070;
+}
+
+.navbar-toggler,  
+.navbar-toggler:focus {
+  color: #EC6E4C!important;
+  border: 1px solid #EC6E4C!important;
+  border-radius: 3px;
+  outline: none;
+  padding: 7px 12px 5px;
 }
 
 .form-control {
@@ -51,3 +94,25 @@ body {
 .btn:focus {
   box-shadow: none!important;
 }
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background: #F8F7F5;
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.food-info .card {
+  background: #FFFFFF;
+  cursor: default;
+}
+
+.food-detail img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
