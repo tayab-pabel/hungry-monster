@@ -1,5 +1,20 @@
 const mainAPI = "https://www.themealdb.com/api/json/v1/1/search.php";
 
+// Data Loading Spinner
+const toggleSpinner = () => {
+  const spinner = document.getElementById("spinner");
+  spinner.classList.toggle("d-none");
+};
+
+// Keyboard Enter Button Event Handler
+document.getElementById("meal")
+    .addEventListener("keypress", function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            document.getElementById("search").click();
+        }
+});
+
 // Search Button Handler
 const searchBtn = document.getElementById("search");
 searchBtn.addEventListener("click", function () {
@@ -13,6 +28,7 @@ searchBtn.addEventListener("click", function () {
         if (food == null) {
             document.getElementById("notice").innerText =
                   "Sorry, No Results Found!";
+            toggleSpinner();
         } else {
             const menuList = document.getElementById("menuList");
             food.forEach(foods => {
@@ -74,7 +90,5 @@ const foodInfo = food => {
     `;
 }
 
-const toggleSpinner = () => {
-    const spinner = document.getElementById("spinner");
-    spinner.classList.toggle("d-none");
-}
+
+
