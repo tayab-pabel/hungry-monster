@@ -5,6 +5,7 @@ const searchBtn = document.getElementById("search");
 searchBtn.addEventListener("click", function () {
     const meal = document.getElementById("meal").value;
     const url = `${mainAPI}?s=${meal}`;
+    toggleSpinner();
     fetch(url)
         .then(res => res.json())
         .then(data => mealMenu(data.meals));
@@ -27,6 +28,7 @@ searchBtn.addEventListener("click", function () {
                 `;
                 foodDiv.innerHTML = foodInfo;
                 menuList.appendChild(foodDiv);
+                toggleSpinner();
                 });
         }
     }
@@ -70,4 +72,9 @@ const foodInfo = food => {
             </p>
         </div>
     `;
+}
+
+const toggleSpinner = () => {
+    const spinner = document.getElementById("spinner");
+    spinner.classList.toggle("d-none");
 }
